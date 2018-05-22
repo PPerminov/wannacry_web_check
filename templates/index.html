@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>check wannacry</title>
+  <meta charset='utf8'>
+
+</head>
+
+<body>
+
+  <form action="/wannacry" method='post'>
+    <input name='address' type="text">
+<input type="submit">
+  </form>
+
+  {% if error == 1 %}
+    <h2>Bad IP</h2>
+  {% endif %}
+
+{% if answer %}
+  {{ answer['host'] }}<br>
+  {{ answer['status'] }}
+{% endif %}
+
+
+
+
+</body>
+</html>
