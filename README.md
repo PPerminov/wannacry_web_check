@@ -1,0 +1,1 @@
+# wannacry_web_check
